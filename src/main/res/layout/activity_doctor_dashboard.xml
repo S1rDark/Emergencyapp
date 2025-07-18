@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить регистрации пациентов" />
+
+    <Button
+        android:id="@+id/btnMedCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Медицинские карты"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Чат"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/buttonEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Экстренная ситуация"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Кнопка Моя медкарта -->
+
+    <!-- Круглая кнопка Паники снизу -->
+
+    <Button
+        android:id="@+id/buttonMyCard"
+        android:layout_width="383dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:text="Моя медкарта" />
+
+    <Button
+        android:id="@+id/buttonPanic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:text="‼️"
+        android:textSize="24sp"
+        android:background="@drawable/bg_round_red"
+        android:textColor="@android:color/white"
+        android:elevation="6dp" />
+</RelativeLayout>

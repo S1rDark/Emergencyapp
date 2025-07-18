@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textSender"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправитель" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:text="Сообщение" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:text="Время" />
+    <Button
+        android:id="@+id/buttonMarkDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполнено"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonViewCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Медкарта"
+        android:visibility="gone"/>
+
+</LinearLayout>

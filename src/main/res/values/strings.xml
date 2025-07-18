@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmergencyApp</string>
+    <!-- Идентификатор канала уведомлений -->
+    <string name="default_notification_channel_id">emergency_alerts</string>
+    <string-array name="emergency_reasons">
+        <item>Инсульт</item>
+        <item>Инфаркт</item>
+        <item>Судороги</item>
+        <item>Остановка дыхания</item>
+        <item>Другое</item>
+    </string-array>
+
+</resources>

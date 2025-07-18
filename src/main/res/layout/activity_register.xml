@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Имя -->
+    <EditText
+        android:id="@+id/editTextRegName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ваше имя"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editTextRegEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextRegName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Пароль -->
+    <EditText
+        android:id="@+id/editTextRegPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextRegEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Подтвердите пароль -->
+    <EditText
+        android:id="@+id/editTextRegConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Подтвердите пароль"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextRegPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Выбор роли -->
+    <RadioGroup
+        android:id="@+id/radioGroupRegRole"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextRegConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioRegDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Врач"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioRegPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пациент"
+            android:layout_marginStart="24dp"/>
+    </RadioGroup>
+
+    <!-- Номер палаты (для пациентов) -->
+    <EditText
+        android:id="@+id/editTextRegRoom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Номер палаты"
+        android:inputType="number"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupRegRole"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Кнопка Регистрация -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextRegRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

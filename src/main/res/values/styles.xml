@@ -1,0 +1,9 @@
+<resources>
+    <!-- Базовая тема приложения -->
+    <style name="Theme.EmergencyApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Здесь вы можете перенастроить цвета, шрифты и т.п. -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <!-- … другие атрибуты темы … -->
+    </style>
+</resources>
