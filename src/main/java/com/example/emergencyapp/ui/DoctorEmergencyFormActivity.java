@@ -151,7 +151,7 @@ public class DoctorEmergencyFormActivity extends AppCompatActivity {
     }
 
     private void sendSmsFallback(String text) {
-        String doctorPhone = "+375293361695"; // TODO: можно сделать выбор по пациенту
+        String doctorPhone = "+37529"; // TODO: можно сделать выбор по пациенту
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(
                 doctorPhone,
