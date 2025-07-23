@@ -142,7 +142,7 @@ public class EmergencyFormActivity extends AppCompatActivity {
     }
 
     private void sendSmsFallback(String text) {
-        String doctorPhone = "+375293361695"; // TODO: заменить или получать из профиля врача
+        String doctorPhone = "+37529"; // TODO: заменить или получать из профиля врача
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(
                 doctorPhone,
